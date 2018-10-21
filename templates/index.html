@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!-- Per-Niklas Longberg -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>s t a c c</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <h1 id="title">Welcome to Space and Ladders!</h1>
+    <section id="boardWrapper">
+        <form action="/players">
+            <label for="players">How many players are we bringing to the table?</label>
+            <input id="players" type="number">
+        </form>
+        <button id="start" type="button">Start</button>
+        <canvas id="board">
+        </canvas>
+
+    </section>
+</body>
+</html>
