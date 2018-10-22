@@ -1,48 +1,113 @@
-html, body {
+html {
     height: 100%;
     width: 100%;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    background: url('img/background.png') no-repeat center center fixed;
+    background-size: cover;
 }
 
 #title {
     margin: 50px auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     font-size: 40pt;
 }
 
-#start {
+#controls {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: auto;
+    position: relative;
+    -webkit-transform: translatex(-100px);
+        -ms-transform: translatex(-100px);
+            transform: translatex(-100px);
+}
+
+#start, #roll, #reset {
     outline: 0;
-    display: block;
-    margin: 10% 50%;
     padding: 20px 50px;
     font-size: 26pt;
     background-color: #b23000;
     color: white;
+    -webkit-transition: ease 0.7s;
+    -o-transition: ease 0.7s;
     transition: ease 0.7s;
     border: 0;
-    border-radius: 1em;
-    transform: translateX(-50%) translateY(-50%);
+    border-radius: 0.7em;
 }
 
-#start:hover {
+#roll {
+    display: inline-block;
+    width: 300px;
+    margin: 10px;
+}
+
+#start {
+    display: block;
+    margin: 10% 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+}
+
+#start:hover, #roll:hover, #reset:hover {
     color: black;
-    background-color: wheat;
+    background-color: #ffb380;
+    -webkit-transition: ease 0.7s;
+    -o-transition: ease 0.7s;
     transition: ease 0.7s;
     cursor: pointer;
+    -webkit-box-shadow: 0 2px 3px 2px #6666;
+            box-shadow: 0 2px 3px 2px #6666;
 }
+
+#playerTurn {
+    display: inline-block;
+    font-size: 23pt;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 20px auto;
+}
+
+ #lastRoll {
+     position: absolute;
+     top: 5px;
+     right: -310px;
+     width: 300px;
+     font-size: 15pt;
+ }
 
 #boardWrapper {
     width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     margin: 0;
+    -webkit-transition: ease 1.5s;
+    -o-transition: ease 1.5s;
     transition: ease 1.5s;
 }
 
 #boardWrapper form {
     display: block;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     margin: auto;
     font-size: 17pt;
@@ -61,11 +126,31 @@ html, body {
 }
 
 #board {
-    margin: 50px 0 0 50%;
     font-family: 'Roboto', sans-serif;
     background-color: #eeeeee;
     border-radius: 1em;
+    -webkit-box-shadow: 0 4pt 8pt 1pt #6666;
+            box-shadow: 0 4pt 8pt 1pt #6666;
+    -webkit-transition: ease 1.5s;
+    -o-transition: ease 1.5s;
     transition: ease 1.5s;
-    box-shadow: 0 4pt 8pt 1pt #cccccc;
-    transform: translateX(-50%);
+}
+
+#playerDisplay {
+    position: absolute;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 70px;
+    top: 0;
+    left: 0;
+    font-size: 12pt;
+    margin: 15px 5px;
+}
+
+.player {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    margin: 3px;
 }
