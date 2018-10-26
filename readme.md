@@ -11,10 +11,10 @@ JavaScript handles just about any amount of players (load times on over 50 000 p
 
 
 ### Running the app:
-l. Make sure Python 3.x is installed
-l. Open a terminal in the root of the project
-l. Enter _pip install -r requirements.txt_
-l. Enter _python app.py_
-l. Open your favorite browser (Chrome is extremely recommended)
-l. Enter 127.0.0.1:5000
-l. Have fun? (It is of utmost importance that you double click the board at least once).
+1. Make sure Python 3.x is installed
+2. Open a terminal in the root of the project
+3. Enter _pip install -r requirements.txt_
+4. Enter _python app.py_
+5. Open your favorite browser (Chrome is extremely recommended)
+6. Enter 127.0.0.1:5000
+7. Have fun? (It is of utmost importance that you double click the board at least once).
